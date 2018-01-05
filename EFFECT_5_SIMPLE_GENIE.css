@@ -1,0 +1,21 @@
+/* EFFECT #5: SIMPLE GENIE */
+.et_header_style_fullscreen .et_slide_in_menu_container{
+    visibility: hidden;
+    opacity: 1;
+    -webkit-transform: translateY(60%) scale(0);
+    transform: translateY(60%) scale(0);
+    -webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
+    transition: transform 0.4s, visibility 0s 0.4s;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container.et_pb_fullscreen_menu_opened {
+    visibility: visible;
+    -webkit-transform: translateY(0%) scale(1);
+    transform: translateY(0%) scale(1);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+.et_pb_fullscreen_menu_opened .et_mobile_menu li {
+    -webkit-transition-delay: 0s !important;
+    transition-delay: 0s !important;
+}
+/* End EFFECT #5: SIMPLE GENIE */

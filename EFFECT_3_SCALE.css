@@ -1,0 +1,22 @@
+/* EFFECT #3: SCALE */
+.et_header_style_fullscreen .et_slide_in_menu_container {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+    transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container.et_pb_fullscreen_menu_opened {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);	
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+}
+.et_pb_fullscreen_menu_opened .et_mobile_menu li {
+    -webkit-transition: opacity 0.5s ease !important;
+    transition: opacity 0.5s ease !important;
+}
+/* End EFFECT #3: SCALE */

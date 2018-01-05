@@ -1,0 +1,25 @@
+/* Fullscreen Menu Effects */
+
+/* EFFECT #1: CORNER */
+.et_header_style_fullscreen .et_slide_in_menu_container {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(100px) translateX(100px);
+    transform: translateY(100px) translateX(100px);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container.et_pb_fullscreen_menu_opened {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.et_pb_fullscreen_menu_opened .et_mobile_menu li {
+    -webkit-transition: opacity 0.5s ease !important;
+    transition: opacity 0.5s ease !important;
+}
+/* End EFFECT #1: CORNER */
+
